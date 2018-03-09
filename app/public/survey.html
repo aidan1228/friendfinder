@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Survey</h2>
+      <hr>
+      <h3><strong>About You</strong></h3>
+      <h4>Name (required)</h4>
+      <input type="text" id="name" class="form-control" required>
+      <h4>Link to Photo (required)</h4>
+      <input type="text" id="photo" class="form-control" required>
+      <hr>
+      <h3><strong>Question 1</strong></h3>
+      <h4>You enjoy finding yourself in a social setting on Friday and Saturday nights</h4>
+      <select class="chosen-select" id="q1">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 2</strong></h3>
+      <h4>You are content with where you are at in life and do not see much room for imporvement</h4>
+      <select class="chosen-select" id="q2">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 3</strong></h3>
+      <h4>You find yourself as more of the adventurous type</h4>
+      <select class="chosen-select" id="q3">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 4</strong></h3>
+      <h4>You tend to keep a relaxed state of mind</h4>
+      <select class="chosen-select" id="q4">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 5</strong></h3>
+      <h4>You feel that there is still a lot to lear nabout yourself and other people</h4>
+      <select class="chosen-select" id="q5">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 6</strong></h3>
+      <h4>You find that you become attached to people too easily</h4>
+      <select class="chosen-select" id="q6">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 7</strong></h3>
+      <h4>You feel that you can often times tell what people are thinking</h4>
+      <select class="chosen-select" id="q7">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 8</strong></h3>
+      <h4>After a long day of hard work you like to relieve yourself with a glass of wine or a smoke</h4>
+      <select class="chosen-select" id="q8">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 9</strong></h3>
+      <h4>You enjoy getting creative</h4>
+      <select class="chosen-select" id="q9">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+      <h3><strong>Question 10</strong></h3>
+      <h4>You enjoy getting active</h4>
+      <select class="chosen-select" id="q10">
+          <option value></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly agree)</option>
+      </select>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+        Submit
+    </button>
+    <hr>
+    <footer class="footer">
+
+      <div class="container">
+
+        <p>
+            <a href="api/friends">API friends list</a>
+             | 
+            <a href="https://github.com/aidan1228/friendfinder">Github Repo</a>
+        </p>
+
+        
+      </div>
+    </footer>
+  </div>
+
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h2 class="modal-title"><strong>Best Match: </strong></h2>
+            </div>
+            <div class="modal-body">
+                <h2 id="profileName"></h2>
+                <img id="profilePhoto">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+<script type="text/javascript">
+    $('#submit').click( function() {
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+        console.log(userData.scores);
+    }); 
+  
+</script>
+</body>
+</html>
