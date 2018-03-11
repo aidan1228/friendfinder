@@ -179,8 +179,17 @@
             $("#q10").val()
           ]
         };
-        console.log(userData.scores);
+        // console.log(userData.scores);
+
+        $.post("/api/friends", userData, function(data) {
+            $("#profileName").text(data.name);
+            $("#profilePhoto").attr("src", data.photo);
+
+            $("#results-modal").modal("toggle");
+        });
     }); 
+
+    
   
 </script>
 </body>

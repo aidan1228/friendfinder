@@ -10,4 +10,8 @@ app.get("/survey", function(req, res) {
 });
 };
 
+
+app.post("/survey", function(req,res) {
+    console.log(res.body);
+})
 module.exports = loadPage;
